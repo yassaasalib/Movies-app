@@ -1,0 +1,33 @@
+#structure {
+	display: grid;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	grid-template-rows: auto 1fr auto;
+
+	&__main {
+		float: left;
+		width: 100%;
+		justify-self: center;
+		background: $background_color;
+	}
+
+	&__locked {
+		overflow: hidden;
+	}
+}
+
+.structure {
+	position: relative;
+	width: 360px;
+	margin: 0 auto;
+	z-index: $z_index_structure;
+
+	&__container {
+		float: left;
+		width: 100%;
+		margin: 38px 0 38px 0;
+		padding: 0;
+	}
+}

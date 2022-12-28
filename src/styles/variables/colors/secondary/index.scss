@@ -1,0 +1,82 @@
+$secondary_background_color: #f4f3f1;
+$secondary_background_color: #f6f3ec;
+$secondary_alt_background_color: #f6f3ec;
+
+$secondary_against_background_border_color: #999;
+$secondary_against_background_border: 1px solid $secondary_against_background_border_color;
+
+$secondary_internal_border_color: #c8c8c8;
+$secondary_internal_border: 1px solid $secondary_internal_border_color;
+
+// $secondary_against_base_border: 1px solid #141414;
+// $secondary_against_primary_border: 1px solid #1e1d24;
+// $secondary_against_tertiary_border: 1px solid #1e1d24;
+
+// $secondary_against_backdrop_border: 1px solid #000;
+// $secondary_against_map_border: 1px solid #000;
+// $secondary_against_image_border: 1px solid #000;
+
+$secondary_value_color: $tertiary_background_color;
+$secondary_value_background_color: #fff;
+$secondary_value_border_color: #e4e4e4;
+$secondary_value_border: 1px solid $secondary_value_border_color;
+$secondary_value_border_radius: 8px;
+
+$secondary_label_color: #a8a8a8;
+$secondary_paragraph_color: #545454;
+// $secondary_title_border: 3px solid #2b2a33;
+// $secondary_title_color: #343434;
+
+$secondary_field_enabled_background_color: #fff;
+$secondary_field_enabled_border_color: #a8a8a8;
+$secondary_field_enabled_border_color: $secondary_against_background_border_color;
+$secondary_field_enabled_border: 1px solid $secondary_field_enabled_border_color;
+$secondary_field_enabled_border_dotted: 1px dotted #000;
+$secondary_field_enabled_focus_border: 1px solid #2970fa;
+// $secondary_field_enabled_caret_color: #585858;
+// $secondary_field_enabled_placeholder_color: #a8a8a8;
+$secondary_field_enabled_content_color: #585858;
+
+$secondary_field_disabled_background_color: #d8d8d8;
+$secondary_field_disabled_border_color: #000;
+$secondary_field_disabled_border: 1px solid #000;
+$secondary_field_disabled_border_focus: 1px solid #2970fa;
+$secondary_field_disabled_caret_color: #585858;
+$secondary_field_disabled_placeholder_color: #a8a8a8;
+$secondary_field_disabled_content_color: #585858;
+
+$secondary_select_option_background_color: $secondary_field_enabled_background_color;
+$secondary_select_option_border: 1px solid #a8a8a8;
+$secondary_select_option_border: 1px solid #000;
+$secondary_select_option_border_bottom: 1px solid #000;
+// $secondary_select_option_text_color: #e8e8e8;
+// $secondary_select_palette_colors_border: 1px solid #383838;
+
+$secondary_button_active_background_color: #000;
+// $secondary_button_active_border: 1px solid #194396;
+$secondary_button_active_text_color: #fff;
+
+// $secondary_button_inactive_background_color: $primary_background_color;
+// $secondary_button_inactive_border: 1px solid #1e1d24;
+// $secondary_button_inactive_text_color: #fff;
+
+// $secondary_accent_background_color: $accent_color;
+// $secondary_accent_border: 1px solid #1e1d24;
+// $secondary_accent_text_color: #000;
+
+// $secondary_validation_background_color: $primary_background_color;
+// $secondary_validation_text_color: $primary_title_color;
+// $secondary_validation_border: 1px solid #1e1d24;
+
+// $secondary_progress_background_color: #999;
+// $secondary_progress_background_border: 1px solid #555;
+// $secondary_progress_line_color: $main_color;
+// $secondary_progress_line_border: 1px solid #194396;
+
+// $secondary_article_grid_border: 1px solid #000;
+// $secondary_article_health_border: 1px solid #c8c8c8;
+// $secondary_article_dynamic_list_background_color: #fff;
+// $secondary_article_dynamic_list_border: 1px solid red;
+
+// $secondary_square_background_color: #c8c8c8;
+// $secondary_square_border: 1px solid #333;

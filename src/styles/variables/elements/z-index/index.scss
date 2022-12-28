@@ -1,0 +1,61 @@
+/* Base bottom: layer
+ 1
+
+ Form select layer
+ 10
+ 11
+ 12
+
+ Header
+ 20
+
+ Form validation layer
+ 30
+
+ Backdrop layer
+ 80
+
+ Modal layer
+ 81
+
+ Panel layer
+ 81
+
+ Loader layer
+ 82
+
+ Chat layer
+ 90
+
+ Unknown order
+ 99999
+
+ 1
+ 9999
+ 99999 */
+
+$z_index_structure: 1;
+
+$z_index_select_holder: 10;
+$z_index_select_options: 11;
+$z_index_select_options_list: 12;
+
+$z_index_header: 20;
+
+$z_index_validation: 30;
+
+$z_index_backdrop: 80;
+
+$z_index_modal: 81;
+
+$z_index_panel: 81;
+
+$z_index_global: 82;
+
+$z_index_chat: 90;
+
+$z_index_feature_number: 99999;
+
+$z_index_subscribe_progress_holder: 1;
+$z_index_subscribe_progress_dots: 9999;
+$z_index_subscribe_progress_circle: 99999;

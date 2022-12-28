@@ -1,0 +1,20 @@
+#structure__main {
+	width: 100%;
+}
+
+.structure {
+	width: 355px;
+	margin: 0 auto;
+
+	&__container {
+		margin: 38px 0 38px 0;
+	}
+
+	&__interactive--container {
+		width: 364px;
+	}
+
+	&__login--container {
+		width: 345px;
+	}
+}
