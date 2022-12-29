@@ -1,120 +1,26 @@
-$primary_background_color: #eae151;
-$primary_background_color: #fff;
-$primary_against_background_border: 1px solid #484848;
+$font-family--sans-serif:  Nunito, sans-serif;
+$font-family-serif-dosis: Dosis, sans-serif;
 
-$primary_button_active_background_color: #2970fa;
-$primary_button_active_border: 1px solid #333;
-$primary_button_active_text_color: #fff;
 
-$primary_field_enabled_focus_border: 1px solid #fff;
+$base-font-size: 62.5%;
+$base-line-height: 1.6;
+$base-bg: #141414;
+$base-font-color: #fff;
+$anchor-font-color: #dc4666;
+$base-font-family: $font-family--sans-serif;
+$base-font-weight: 400;
 
-$primary_option_color: #919191;
-$primary_option_active_color: #000;
+$letter-spacing: 0.4px;
+$text-color-grey: #abb7c4;
 
-$primary_validation_background_color: $accent_color;
-$primary_validation_border: 1px solid #806734;
-$primary_validation_text_color: $accent_title_color;
+$primary-color: #2196f3;
+// $secondary-color: #202124;
+$secondary-color: #dc4666;
+$text-color: #fafafa;
 
-$primary_accent_background_color: $tertiary_background_color;
+$breakpoint-xsmall: 640px;
+$breakpoint-small: 768px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1200px;
+$breakpoint-xlarge: 1400px;
 
-$primary_title_color: #fff;
-
-$primary_button_active_text_color: #fff;
-
-$primary_against_secondary_border: 1px solid #1e1d24;
-
-$primary_button_inactive_background_color: $background_color;
-// $primary_button_inactive_border: 1px solid #232228;
-// $primary_button_inactive_text_color: #fff;
-
-// $primary_against_background_border: 1px solid #232228;
-// $primary_against_background_border: 1px solid #0a0a0c;
-// $primary_against_tertiary_border: 1px solid #232228;
-// $primary_against_backdrop_border: 1px solid #000;
-// $primary_against_map_border_color: #000;
-
-// $primary_check_color: #b4dac3;
-// $primary_label_color: #626262;
-$primary_label_color: #717171;
-
-// $primary_paragraph_color: #c8c8c8;
-
-// $primary_field_enabled_dotted_border: 1px solid #000;
-
-// $primary_green_color: #268d81;
-// $primary_green_color: #43aa8b;
-// $primary_green_color: #56b397;
-// $primary_green_color: #57cc99;
-// $primary_green_color: #8ec7a5;
-// $primary_green_color: #a5d2b7;
-
-// $primary_red_color: #ef233c;
-// $primary_red_color: #f13950;
-// $primary_red_color: #d63b5c;
-// $primary_red_color: #ee4266;
-// $primary_red_color: #f05575;
-
-// $primary_grey_color: #808080;
-
-// $primary_field_enabled_background_color: #e8e8e8;
-
-// $primary_field_enabled_border: 1px solid #000;
-// $primary_field_enabled_focus_border: 1px solid #2970fa;
-// $primary_field_enabled_placeholder_color: #a8a8a8;
-// $primary_field_enabled_content_color: #585858;
-
-// $primary_field_disabled_background_color: #e8e8e8;
-// $primary_field_disabled_background_color: #808080;
-// $primary_field_disabled_border: 1px solid #000;
-// $primary_field_disabled_caret_color: #585858;
-// $primary_field_disabled_placeholder_color: #a8a8a8;
-// $primary_field_disabled_content_color: #585858;
-
-// $primary_field_check_color: var($primary_green_color);
-// $primary_field_times_color: var($primary_red_color);
-
-// $primary_navigation_option_active_color: #fff;
-// $primary_navigation_option_inactive_color: #a8a8a8;
-
-// $primary_select_option_background_color: #e8e8e8;
-// $primary_select_option_border: 1px dotted #e8e8e8;
-// $primary_select_option_border: 1px dotted #233;
-// $primary_select_option_border_bottom: 1px solid #000;
-// $primary_select_option_text_color: #e8e8e8;
-
-// $primary_select_palette_colors_border: 1px solid #383838;
-// $primary_select_palette_colors_border: 1px solid #000;
-
-$primary_button_active_background_color: blue;
-// $primary_button_active_border: 1px solid #333;
-
-// $primary_button_inactive_background_color: var($background_color);
-// $primary_button_inactive_border: 1px solid #232228;
-$primary_button_inactive_text_color: #fff;
-
-// $primary_accent_border: 1px solid #1e1d24;
-// $primary_accent_button_inactive_border: 1px solid #232228;
-// $primary_accent_paragraph_color: var($tertiary_paragraph_color);
-// $primary_accent_title_color: var($primary_background_color);
-
-// $primary_upload_button_background_color: var($tertiary_background_color);
-// $primary_upload_button_border: 1px solid #1e1d24;
-// $primary_upload_border: 1px dotted #fff;
-// $primary_upload_button_title_color: var($primary_background_color);
-
-// $primary_accent_button_active_background_color: var($tertiary_button_active_background_color);
-// $primary_accent_button_active_border_color: var($tertiary_button_active_border);
-// $primary_accent_button_active_text_color: var($tertiary_button_active_text_color);
-
-// $primary_accent_button_inactive_background_color: var($tertiary_button_inactive_background_color);
-// $primary_accent_button_inactive_border_color: var($tertiary_button_inactive_border_color);
-// $primary_accent_button_inactive_text_color: var($tertiary_button_inactive_text_color);
-
-// $primary_tag_background_color: var($primary_background_color);
-// $primary_tag_order: 1px solid #777;
-// $primary_tag_option_background_color: var($secondary_background_color);
-// $primary_tag_options_border: 1px solid #1e1d24;
-// $primary_tag_options_border: 1px solid #333;
-// $primary_tag_text_color: #fff;
-
-// $primary_system_title_border: 1px solid #555;

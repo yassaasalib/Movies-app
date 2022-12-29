@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['../../styles/index.scss']
 })
 export class headerComponent {
+  leftSidebar: boolean = true;
 
 }

@@ -16,12 +16,11 @@
 @import "variables/fonts/family";
 @import "variables/fonts/size";
 @import "variables/fonts/typekit";
-@import "variables/fonts/typekit";
-@import "./base/backdrop.scss";
 
 @media (min-width: 0) {
     @import './360/structure';
     @import './360/movies.scss';
+    @import './360/header.scss';
 }
 @media (min-width: 375px) {
     @import './375/structure';
