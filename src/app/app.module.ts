@@ -1,8 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { headerComponent } from './header/header.component';
+import { MediaSerice } from './media.service';
 
 @NgModule({
   declarations: [
@@ -11,9 +13,10 @@ import { headerComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MediaSerice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

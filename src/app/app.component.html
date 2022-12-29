@@ -12,10 +12,10 @@
         <div id="movies">
             <div class="movie" *ngFor="let item of mediaItems">
                 <div class="movie__picture">
-                    <!-- <img src="{{ mediaItem.picture }}" alt=""> -->
+                    <img src="https://image.tmdb.org/t/p/w500/{{ item.poster_path }}" alt="">
                 </div>
                 <div class="movie__title">
-                    <h1>{{ item.name }}</h1>
+                    <h1>{{ item.title }}</h1>
                 </div>
             </div>
         </div>
