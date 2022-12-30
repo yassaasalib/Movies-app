@@ -1,6 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { map, Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { MediaSerice } from './media.service'
 import { Media } from './models/media';
 import { MediaItem } from './models/mediaItem';
@@ -17,20 +16,12 @@ export class AppComponent implements OnInit  {
   media$?: Observable<Media>;
   mediaItems?: MediaItem[];
   genre?: string;
-  searchStr?: MediaItem[];
+  searchText?: string;
 
   constructor(private mediaSerice: MediaSerice) {  }
 
-
-  loadMovies() {
-    const start = (this.page - 1) * this.perPage;
-    const end = start + this.perPage;
-  }
-
   ngOnInit(): void {
     this.mediaSerice.getMedia(1, "Action").subscribe(media => this.mediaItems = media.results);
-    this.mediaSerice.searchMedia("Violent Night").subscribe(media => this.mediaItems = media.results);
-
   }
   
   loadMore() {
@@ -38,9 +29,9 @@ export class AppComponent implements OnInit  {
     this.mediaSerice.getMedia(this.page, this.genre).subscribe(media => this.mediaItems = this.mediaItems?.concat(media.results));
   }
 
-  searchMovies() {
-    this.mediaSerice.searchMedia('Violent Night').subscribe(res => {
-      this.searchStr = res.results
+  searchMovies(searchText?: string) {
+    this.mediaSerice.searchMedia(1, searchText).subscribe(media => {
+      this.mediaItems = media.results;
     });
   }
 

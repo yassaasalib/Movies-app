@@ -7,32 +7,22 @@ import { Media } from './models/media'
   providedIn: 'root'
 })
 export class MediaSerice {
+  private apiKey = '39d7f36224689a01c01ff43a6ba763ff';
 
   constructor(private http: HttpClient) { }
 
   getMedia(page: number, genre?: string): Observable<Media> {
-    const apiKey = '39d7f36224689a01c01ff43a6ba763ff';
-    let apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${page}`; 
+    let apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${this.apiKey}&page=${page}`; 
     if (genre) {
-      apiURL += '&with_genres=' + genre;
+      apiURL += `&with_genres=${genre}`;
     }
 		return this.http.get<Media>(apiURL);
 	}
 
-  // searchMedia(page: number, text: string): Observable<Media> {
-  //   const apiKey = '39d7f36224689a01c01ff43a6ba763ff';
-  //   let apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${page}`; 
-  //   if (text) {
-  //     apiURL += `&query=${text}`;
-  //   }
-  //   return this.http.get<Media>(apiURL);
-  // }
-
-  searchMedia(searchStr: string): Observable<any> {
-    const apiKey = '39d7f36224689a01c01ff43a6ba763ff';
-    let apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&page=${searchStr}`; 
-    if (searchStr) {
-      apiURL += `&query=${searchStr}`;
+  searchMedia(page: number, searchText?: string): Observable<Media> {
+    let apiURL = `https://api.themoviedb.org/3/search/multi?api_key=${this.apiKey}&page=${page}`; 
+    if (searchText) {
+      apiURL += `&query=${searchText}`;
     }
     return this.http.get<Media>(apiURL);
   }

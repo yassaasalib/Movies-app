@@ -5,9 +5,10 @@
             <div class="search__section">
                 <label for="search__career-last" type="text">Search</label>
                 <div class="search__field">
-                    <input type="text" id="search__career-last" placeholder="Search for movies..." [(ngModel)]="searchStr"
-                    name="searchStr" (keyup.enter)="searchMovies()"/>
-                    <div id="search__button" (click)="searchMovies()">
+                    <input #searchbox type="text" id="search__career-last" placeholder="Search for movies..." 
+                    [(ngModel)]='searchText' name='searchBar' [value]='searchText' 
+                    name="searchStr" (keyup.enter)="searchMovies(searchText)"/>
+                    <div id="search__button" (click)="searchMovies(searchText)">
                         <button>Go!</button>
                     </div>
                 </div>
