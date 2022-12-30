@@ -3,15 +3,10 @@
 }
 
 .structure {
-	width: 647px;
+	width: 667px;
 	margin: 0 auto;
-}
-.structure__container {
-	margin: 38px 0 38px 0;
-}
-.structure__interactive--container {
-	width: 632px;
-}
-.structure__login--container {
-	width: 360px;
+
+	&__container {
+		margin: 38px 0 38px 0;
+	}
 }

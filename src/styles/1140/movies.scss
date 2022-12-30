@@ -1,13 +1,8 @@
 #movies {
-    width: 728px;
+    width: 1024px;
     margin: 0 20px;
     
     &__list {
-        display: grid;
-        width: 100%;
-        margin: 0;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
         gap: 10px;
     }
 }

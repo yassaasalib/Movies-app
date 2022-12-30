@@ -2,10 +2,16 @@
     float: left;
     width: 320px;
     margin: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-	grid-template-rows: auto;
-    gap: 10px;
+    padding: 0
+    
+    &__list {
+        display: grid;
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
 }
 .movie {
 	float: left;
@@ -71,4 +77,87 @@
             border-radius: $border_radius;
             border: none;
         }
+}
+
+.search__field {
+    float: left;
+    display: grid;
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#search__button {
+    height: 100%;
+    width: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    grid-column: 8/10;
+
+    button {
+        float: left;
+        width: 100%;
+        height: 48px;
+        margin: 0;
+        padding: 0;
+        background: #0f8;
+        border: none;
+        color: #fff;
+        border-left: 1px solid #716e6e;
+        border-radius: 0 4px 4px 0;
+		cursor: pointer;
+        background: #e71d36;
+    }
+}
+.search__section {
+    float: left;
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 0;
+
+	label {
+		float: left;
+		display: inline-block;
+        width: 100%;
+		margin: 0 0 10px 0;
+		padding: 0;
+        font-family: $secondary_font;
+        font-weight: $secondary_font_weight_500;
+		font-size: 15px;
+		line-height: 15px;
+		color: #fff;
+		outline: none;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+	input {
+		float: left;
+		width: 100%;
+		height: 46px;
+		margin: 0;
+		padding: 0;
+		font-family: $secondary_font;
+		font-weight: $secondary_font_weight_300;
+		font-size: 15px;
+		border-radius: 4px 0 0 4px;
+		color: #fff;
+		background: #212121;
+        border: none;
+		border-bottom: 1px solid #716e6e;
+		border-top: 1px solid #716e6e;
+		border-left: 1px solid #716e6e;
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		outline: none;
+		text-align: center;
+        grid-column: 1/8;
+		cursor: pointer;
+	}
 }
