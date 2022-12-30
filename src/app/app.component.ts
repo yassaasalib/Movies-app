@@ -15,6 +15,7 @@ export class AppComponent implements OnInit  {
   hasMore = true;
   media$?: Observable<Media>;
   mediaItems?: MediaItem[];
+  genre?: string;
 
   constructor(private mediaSerice: MediaSerice) {  }
 
@@ -26,11 +27,13 @@ export class AppComponent implements OnInit  {
   }
 
   ngOnInit(): void {
-    this.mediaSerice.getMovie(1).subscribe(media => this.mediaItems = media.results);
+    this.mediaSerice.getMedia(1, "Action").subscribe(media => this.mediaItems = media.results);
+    //this.mediaSerice.searchMedia(1, "Violent Night").subscribe(media => this.mediaItems = media.results);
+
   }
   
   loadMore() {
     this.page++;
-    this.loadMovies();
+    this.mediaSerice.getMedia(this.page, this.genre).subscribe(media => this.mediaItems = this.mediaItems?.concat(media.results));
   }
 }
