@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { headerComponent } from './header/header.component';
 import { MediaSerice } from './media.service';
 import { FormsModule } from '@angular/forms';
+import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    headerComponent
+    headerComponent,
+    DetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
