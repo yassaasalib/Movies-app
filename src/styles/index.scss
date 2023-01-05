@@ -18,9 +18,11 @@
 @import "variables/fonts/typekit";
 
 @media (min-width: 0) {
+    @import "./360/home";
     @import "./360/structure";
-    @import "./360/movies.scss";
-    @import "./360/header.scss";
+    @import "./360/movies";
+    @import "./360/header";
+    @import "./360/details";
 }
 @media (min-width: 375px) {
     @import "./375/structure";

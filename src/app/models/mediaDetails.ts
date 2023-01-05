@@ -1,4 +1,5 @@
 export interface MediaDetails {
+    results: MediaDetails[] | undefined;
     adult:                 boolean;
     backdrop_path:         string;
     belongs_to_collection: null;

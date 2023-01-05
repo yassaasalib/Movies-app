@@ -1,0 +1,22 @@
+#tags {
+    float: left;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    h4 {
+        float: left;
+        height: 37px;
+        margin: 0 10px 0 0;
+        padding: 0 10px;
+        font-family: $primary_font;
+        font-weight: $primary_font_weight_500;
+        font-size: 14px;
+        line-height: 37px;
+        color: #fff;
+        background: #e71d36;
+        border: var(--primary_accent_border);
+        border-radius: $border_radius;
+        cursor: pointer;
+    }
+}
