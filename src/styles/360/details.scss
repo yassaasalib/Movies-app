@@ -1,5 +1,26 @@
-app-details {
+// app-details {
+//     float: left;
+//     margin: 0;
+//     background: #f9f;
+// }
+
+
+#details {
     float: left;
-    margin: 0;
-    background: #f9f;
+    width: 340px;
+    margin: 0 10px;
+    padding: 0;
+    background: #f99;
+    
+    &__picture {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        img {
+            float: left;
+            width: 100%;
+        }
+    }
 }

@@ -1,23 +1,14 @@
+<div id="spacer"></div>
 <div id="header">
-    <div id="header__holder">
-        <h1 routerLink="/" class="left">MoviesApp</h1>
-        <h1 routerLink="/">Movies</h1>
-    </div>
-</div>
-
-<div id="banner">
-    <div id="picture">
-        <!-- <img src="https://image.tmdb.org/t/p/w500//1XSYOP0JjjyMz1irihvWywro82r.jpg" alt=""> -->
-    </div>
-
-    <div id="banner__container">
-        <h1>Roald Dahl's Matilda the Musical</h1>
-        <div id="banner__holder">
-            <h2>8/10</h2>
-            <span>|</span>
-            <h2>5,500 reviews</h2>
-            <span>|</span>
-            <h2>2020</h2>
+    <h1 routerLink="/" class="left">MoviesApp</h1>
+    <!-- <h1 routerLink="/">Movies</h1> -->
+    <div id="header__search">
+        <label for="input" type="text">Search</label>
+        <div id="header__search--input">
+            <input #searchbox type="text" id="input" placeholder="Search Movies" />
+            <div id="header__search--button">
+                <button>Go!</button>
+            </div>
         </div>
     </div>
 </div>

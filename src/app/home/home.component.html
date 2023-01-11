@@ -1,24 +1,45 @@
 <div class="structure">
     <div class="structure__container">
+        <div id="home__banner">
+            <div id="home__banner--picture">
+                <!-- <img src="https://image.tmdb.org/t/p/w500//1XSYOP0JjjyMz1irihvWywro82r.jpg" alt=""> -->
+            </div>
+
+            <div id="home__banne--container">
+                <h1>Roald Dahl's Matilda the Musical</h1>
+                <div id="home__banner--holder">
+                    <h2>8/10</h2>
+                    <span>|</span>
+                    <h2>5,500 reviews</h2>
+                    <span>|</span>
+                    <h2>2020</h2>
+                </div>
+            </div>
+        </div>
+
         <div id="movies">
-            <div class="search__section">
+            <!-- <div class="search__section">
                 <label for="search__career-last" type="text">Search</label>
                 <div class="search__field">
-                    <input #searchbox type="text" id="search__career-last" placeholder="Search for movies..." 
-                    [(ngModel)]='searchText' name='searchBar' [value]='searchText' 
-                    name="searchStr" (keyup.enter)="searchMovies(searchText)"/>
+                    <input #searchbox type="text" id="search__career-last" placeholder="Search for movies..."
+                        [(ngModel)]='searchText' name='searchBar' [value]='searchText' name="searchStr"
+                        (keyup.enter)="searchMovies(searchText)" />
                     <div id="search__button" (click)="searchMovies(searchText)">
                         <button>Go!</button>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div id="tags">
-                <h4>Drama</h4>
-                <h4>Drama</h4>
-                <h4>Drama</h4>
+                <h4 (click)="getMedia(1, 'action')">Action</h4>
+                <h4 (click)="getMedia(1, 'comedy')">Comedy</h4>
+                <h4 (click)="getMedia(1, 'drama')">Drama</h4>
+                <h4 (click)="getMedia(1, 'fantasy')">Fantasy</h4>
             </div>
             <div id="movies__list">
                 <div class="movie" *ngFor="let item of mediaItems" [routerLink]="[item.id]">
+                    <div id="movies__tag">
+                        <h5>{{item.vote_average}}</h5>
+                    </div>
                     <div class="movie__picture">
                         <img src="https://image.tmdb.org/t/p/w500/{{ item.poster_path }}" alt="">
                     </div>
@@ -27,7 +48,8 @@
                     </div>
                 </div>
             </div>
-            <div id="loadMore">
+
+            <div id="movies__load-more">
                 <button *ngIf="hasMore" (click)="loadMore()">Load More</button>
             </div>
         </div>

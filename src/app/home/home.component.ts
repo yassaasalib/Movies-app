@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   constructor(private mediaSerice: MediaSerice) {  }
 
   ngOnInit(): void {
-    this.mediaSerice.getMedia(1, "Action").subscribe(media => this.mediaItems = media.results);
+    this.getMedia(1);
   }
   
   loadMore() {
@@ -33,6 +33,10 @@ export class HomeComponent implements OnInit {
     this.mediaSerice.searchMedia(1, searchText).subscribe(media => {
       this.mediaItems = media.results;
     });
+  }
+
+  getMedia(currentPage: number, genre?: string) {
+    this.mediaSerice.getMedia(currentPage, genre).subscribe(media => this.mediaItems = media.results);
   }
 
 }
