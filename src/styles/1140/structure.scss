@@ -2,11 +2,17 @@
 	width: 100%;
 }
 
+.structure.full,
 .structure {
-	width: 1140px;
+	width: 1024px;
 	margin: 0 auto;
-
 	&__container {
 		margin: 38px 0 38px 0;
+	}
+	&__interactive--container {
+		width: 1092px;
+	}
+	&__login--container {
+		width: 360px;
 	}
 }
