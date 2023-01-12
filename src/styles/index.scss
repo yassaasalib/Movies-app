@@ -1,20 +1,6 @@
-@import "variables/colors/accent";
-@import "variables/colors/background";
-@import "variables/colors/tertiary";
-@import "variables/colors/primary";
-@import "variables/colors/secondary";
-@import "variables/elements/gap";
-@import "variables/elements/padding";
-@import "variables/elements/gradient";
-@import "variables/elements/height";
-@import "variables/elements/margin";
-@import "variables/elements/media";
-@import "variables/elements/radius";
-@import "variables/elements/shadow";
-@import "variables/elements/width";
-@import "variables/elements/z-index";
+@import "variables/color.scss";
+@import "variables/element.scss";
 @import "variables/fonts/family";
-@import "variables/fonts/size";
 @import "variables/fonts/typekit";
 
 @media (min-width: 0) {
@@ -25,32 +11,44 @@
     @import "./360/details";
 }
 @media (min-width: 375px) {
+    @import "./375/home";
     @import "./375/structure";
-    @import "./375/movies.scss";
-    @import "./375/header.scss";
+    @import "./375/movies";
+    @import "./375/header";
+    // @import "./375/details";
 }
 @media (min-width: 480px) {
+    @import "./480/home";
     @import "./480/structure";
-    @import "./480/movies.scss";
-    @import "./480/header.scss";
+    @import "./480/movies";
+    @import "./480/header";
+    // @import "./480/details";
 }
 @media (min-width: 667px) {
+    @import "./667/home";
     @import "./667/structure";
-    @import "./667/movies.scss";
-    @import "./667/header.scss";
+    @import "./667/movies";
+    @import "./667/header";
+    // @import "./667/details";
 }
 @media (min-width: 768px) {
+    @import "./768/home";
     @import "./768/structure";
-    @import "./768/movies.scss";
-    @import "./768/header.scss";
+    @import "./768/movies";
+    @import "./768/header";
+    // @import "./768/details";
 }
 @media (min-width: 1024px) {
+    @import "./1024/home";
     @import "./1024/structure";
-    @import "./1024/movies.scss";
-    @import "./1024/header.scss";
+    @import "./1024/movies";
+    @import "./1024/header";
+    // @import "./1024/details";
 }
 @media (min-width: 1140px) {
+    @import "./1140/home";
     @import "./1140/structure";
-    @import "./1140/movies.scss";
-    @import "./1140/header.scss";
+    @import "./1140/movies";
+    @import "./1140/header";
+    // @import "./1140/details";
 }

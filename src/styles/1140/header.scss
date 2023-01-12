@@ -3,7 +3,13 @@
 }
 #header {
     height: 70px;
-    padding: 0 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 1024px;
+    }
 
     h1 {
         width: 180px;
@@ -11,11 +17,8 @@
     }
 
     &__search {
-        margin: 0 0 40px 0;
-
         &--input {
             width: 200px;
-            margin: 11px 0 0 0;
         }
 
         label {

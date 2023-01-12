@@ -17,23 +17,26 @@
             </div>
         </div>
 
+
         <div id="movies">
-            <!-- <div class="search__section">
-                <label for="search__career-last" type="text">Search</label>
-                <div class="search__field">
-                    <input #searchbox type="text" id="search__career-last" placeholder="Search for movies..."
-                        [(ngModel)]='searchText' name='searchBar' [value]='searchText' name="searchStr"
-                        (keyup.enter)="searchMovies(searchText)" />
-                    <div id="search__button" (click)="searchMovies(searchText)">
-                        <button>Go!</button>
+            <div id="movies__search">
+                <div id="header__search">
+                    <!-- <label for="input" type="text">Search</label> -->
+                    <div id="header__search--input">
+                        <input #searchbox type="text" id="input" placeholder="Search for movies..."
+                            [(ngModel)]='searchText' name='searchBar' [value]='searchText' name="searchStr"
+                            (keyup.enter)="searchMovies(searchText)" />
+                        <div id="header__search--button" (click)="searchMovies(searchText)">
+                            <button>Go!</button>
+                        </div>
                     </div>
                 </div>
-            </div> -->
-            <div id="tags">
-                <h4 (click)="getMedia(1, 'action')">Action</h4>
-                <h4 (click)="getMedia(1, 'comedy')">Comedy</h4>
-                <h4 (click)="getMedia(1, 'drama')">Drama</h4>
-                <h4 (click)="getMedia(1, 'fantasy')">Fantasy</h4>
+            </div>
+            <div id="movies__sort">
+                <h4 (click)="getMedia(1, 28)">Action</h4>
+                <h4 (click)="getMedia(1, 35)">Comedy</h4>
+                <h4 (click)="getMedia(1, 18)">Drama</h4>
+                <h4 (click)="getMedia(1, 14)">Fantasy</h4>
             </div>
             <div id="movies__list">
                 <div class="movie" *ngFor="let item of mediaItems" [routerLink]="[item.id]">
@@ -48,7 +51,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="movies__load-more">
                 <button *ngIf="hasMore" (click)="loadMore()">Load More</button>
             </div>

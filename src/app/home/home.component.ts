@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   hasMore = true;
   media$?: Observable<Media>;
   mediaItems?: MediaItem[];
-  genre?: string;
+  genre?: number;
   searchText?: string;
 
   constructor(private mediaSerice: MediaSerice) {  }
@@ -35,8 +35,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  getMedia(currentPage: number, genre?: string) {
+  getMedia(currentPage: number, genre?: number) {
     this.mediaSerice.getMedia(currentPage, genre).subscribe(media => this.mediaItems = media.results);
+    this.genre = genre;
   }
 
 }

@@ -12,7 +12,7 @@ export class MediaSerice {
 
   constructor(private http: HttpClient) { }
 
-  getMedia(page: number, genre?: string): Observable<Media> {
+  getMedia(page: number, genre?: number): Observable<Media> {
     let apiURL = `https://api.themoviedb.org/3/discover/movie?api_key=${this.apiKey}&page=${page}`; 
     if (genre) {
       apiURL += `&with_genres=${genre}`;

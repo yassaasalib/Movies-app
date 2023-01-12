@@ -1,0 +1,40 @@
+
+$z_index_structure: 1;
+
+$z_index_select_holder: 10;
+$z_index_select_options: 11;
+$z_index_select_options_list: 12;
+
+$z_index_header: 20;
+
+$z_index_validation: 30;
+
+$z_index_header_backdrop: 2;
+$z_index_backdrop: 80;
+
+$z_index_modal: 81;
+
+$z_index_panel: 81;
+
+$z_index_global: 82;
+
+$z_index_chat: 90;
+
+$z_index_feature_number: 99999;
+
+$z_index_engagement_progress_holder: 1;
+$z_index_engagement_progress_dots: 9999;
+$z_index_engagement_progress_circle: 99999;
+
+
+
+
+$border_radius: 4px;
+$border_radius_top: $border_radius $border_radius 0 0;
+$border_radius_bottom: 0 0 $border_radius $border_radius;
+$border_radius_right: 0 $border_radius $border_radius 0;
+$border_radius_left: $border_radius 0 0 $border_radius;
+$border_radius_circle: 1000px;
+$border_radius_progress: 8px;
+
+$border_radius_device_top: 12px 12px 0 0;
