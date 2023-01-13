@@ -15,40 +15,40 @@
     @import "./375/structure";
     @import "./375/movies";
     @import "./375/header";
-    // @import "./375/details";
+    @import "./375/details";
 }
 @media (min-width: 480px) {
     @import "./480/home";
     @import "./480/structure";
     @import "./480/movies";
     @import "./480/header";
-    // @import "./480/details";
+    @import "./480/details";
 }
 @media (min-width: 667px) {
     @import "./667/home";
     @import "./667/structure";
     @import "./667/movies";
     @import "./667/header";
-    // @import "./667/details";
+    @import "./667/details";
 }
 @media (min-width: 768px) {
     @import "./768/home";
     @import "./768/structure";
     @import "./768/movies";
     @import "./768/header";
-    // @import "./768/details";
+    @import "./768/details";
 }
 @media (min-width: 1024px) {
     @import "./1024/home";
     @import "./1024/structure";
     @import "./1024/movies";
     @import "./1024/header";
-    // @import "./1024/details";
+    @import "./1024/details";
 }
 @media (min-width: 1140px) {
     @import "./1140/home";
     @import "./1140/structure";
     @import "./1140/movies";
     @import "./1140/header";
-    // @import "./1140/details";
+    @import "./1140/details";
 }

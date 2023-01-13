@@ -1,0 +1,23 @@
+#details {
+    width: 1004px;
+    margin: 0 10px;
+
+    &__picture {
+        width: 400px;
+        margin: 0 20px 0 0;
+    }
+    
+    &__container {
+        width: 584px;
+    }
+
+    h1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}

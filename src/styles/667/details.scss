@@ -1,0 +1,22 @@
+#details {
+    width: 667px;
+    margin: 0 10px;
+    &__picture {
+        width: 300px;
+        margin: 0 20px 0 0;
+    }
+    
+    &__container {
+        width: 320px;
+    }
+
+    h1 {
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}

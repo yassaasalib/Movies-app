@@ -55,6 +55,7 @@
             font-size: 16px;
             line-height: 46px;
             background: $primary_button_background;
+            border: $primary_button_border;
             border-radius: $border_radius;
             border: none;
         }
@@ -89,7 +90,7 @@
             line-height: 37px;
             color: $primary_button_color;
             background: $primary_button_background;
-            border: var(--primary_accent_border);
+            border: $primary_button_border;
             border-radius: $border_radius;
             cursor: pointer;
             justify-content: center;
